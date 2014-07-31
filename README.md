@@ -15,7 +15,7 @@ Node.js, Express, Hogan.js
 
 ```
 ./routes/user-handle.js
-./views/user-handle/*
+./views/user-handle/*.hjs
 ./public/stylesheets/user-handle/*.css
 ./public/javascripts/user-handle/*.js
 ./public/images/user-handle/*.*
