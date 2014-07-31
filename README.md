@@ -8,7 +8,7 @@ npm install && npm start
 ```
 
 ## Stack
-Node.js, Express, Stylus, Hogan.js
+Node.js, Express, Hogan.js
 
 ## Pull requests
 All code must be encapsulated within your respective directories, unless necessary:
@@ -16,7 +16,7 @@ All code must be encapsulated within your respective directories, unless necessa
 ```
 ./routes/user-handle.js
 ./views/user-handle/*
-./public/stylesheets/user-handle/*.stylus
+./public/stylesheets/user-handle/*.css
 ./public/javascripts/user-handle/*.js
 ./public/images/user-handle/*.*
 ```
