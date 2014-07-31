@@ -2,6 +2,14 @@
 ==========
 ![](http://assets7.thrillist.com/v1/image/1280637/size/tl-today_sq)
 
+## Installation
+```
+npm install && npm start
+```
+
+## Stack
+Node.js, Express, Stylus, Hogan.js
+
 ## Pull requests
 All code must be encapsulated within your respective directories, unless necessary:
 
