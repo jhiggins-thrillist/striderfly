@@ -11,11 +11,11 @@ npm install && npm start
 Node.js, Express, Hogan.js
 
 ## Pull requests
-All code must be encapsulated within your respective directories, unless necessary:
+**Please fork, and then submit a pull request.**  All code must be encapsulated within your respective directories, unless necessary:
 
 ```
 ./routes/user-handle.js
-./views/user-handle/*
+./views/user-handle/*.hjs
 ./public/stylesheets/user-handle/*.css
 ./public/javascripts/user-handle/*.js
 ./public/images/user-handle/*.*
