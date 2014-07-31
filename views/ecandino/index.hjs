@@ -8,8 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>StriderFly Remix</title>
-    <!-- <link rel='stylesheet' href='/stylesheets/normalize.css' /> -->
-    <link rel='stylesheet' type="text/css" href='stylesheets/ecandino/index.css' />
+    <link rel='stylesheet' href='/stylesheets/ecandino/index.css' />
   </head>
   <body class="opening hide-UI view-2D zoom-large data-close controls-close">
     <div id="navbar">
