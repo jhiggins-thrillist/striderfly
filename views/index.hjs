@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Striderfly - Spread your wings and fly free above the clouds.</title>
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+  </head>
+
+  <body>
+    <h1>Striderfly.xxx</h1>
+
+    <img src="//assets7.thrillist.com/v1/image/1280637/size/tl-today_sq" />
+
+    <div class="wrapper">
+        <main class="container">
+            <aside class="contributors">
+              <h3 class="contributors-title">Contributors:</h3>
+              <ul>
+                {{#users}}
+                    <li class="contributor">
+                        {{#hasDirectory}}<a href="/{{handle}}" class="contributor-link">{{/hasDirectory}}
+                            <span class="contributor-name">{{firstName}} {{lastName}}</span>
+                        {{#hasDirectory}}</a>{{/hasDirectory}}
+                    </li>
+                {{/users}}
+              </ul>
+            </aside>
+        </main>
+    </div>
+
+  </body>
+
+</html>

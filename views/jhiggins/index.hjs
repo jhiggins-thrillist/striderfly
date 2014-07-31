@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>jhiggins</title>
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets/jhiggins/index.css' />
+  </head>
+
+  <body>
+    CONTENT GOES HERE
+  </body>
+
+</html>
