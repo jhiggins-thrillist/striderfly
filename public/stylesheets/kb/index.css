@@ -1,0 +1,22 @@
+body {
+width: 1440px;
+height: 695px;
+overflow: hidden;
+position: relative;
+background: url(/images/kb/bg.png);
+}
+#bk{
+    position:relative;
+    width: 1449px;
+    height: 695px;
+    font-size:100px;
+    background-image: url(/images/kb/burger-king-01.png);
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    color: red;
+}
+/*#bk img{
+    width:500px;
+}
