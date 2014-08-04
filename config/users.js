@@ -120,5 +120,12 @@ module.exports = [
     "firstName": "Maximilian",
     "email": "mhaarhaus@thrillist.com",
     "contribution": 6.06,
+  },
+  {
+    "handle": "kb",
+    "lastName": "Bales",
+    "firstName": "Kyle",
+    "email": "masterjedi@gmail.com",
+    "contribution": 0.0,
   }
 ];
