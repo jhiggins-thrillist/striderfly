@@ -1,3 +1,6 @@
+/*
+  X-Robots-Tag: noindex, nofollow
+
 /:handle/images/*
   Cache-Control: public, max-age=86400
 

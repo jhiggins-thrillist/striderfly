@@ -18,6 +18,8 @@ Every contributor gets a folder in `contributors/`, with their page, assets and 
 ## Deploying
 The site is a static-assets-only Cloudflare Worker at https://striderfly.j0wy.com. `build.js` copies `public/` and every contributor folder into `dist/`, and renders the homepage and 404 page from `views/`. Configuration is in `cloudflare.config.ts` and `wrangler.config.ts`.
 
+The site asks search engines not to index it: `public/_headers` sends `X-Robots-Tag: noindex, nofollow` with every response. There's deliberately no `robots.txt` blocking crawlers, since a crawler that can't fetch a page never sees its noindex header.
+
 ```
 npm run deploy
 ```
