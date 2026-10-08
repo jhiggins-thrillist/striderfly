@@ -1,56 +1,25 @@
-[Striderfly.xxx](http://striderfly.xxx)
+[Striderfly.xxx](https://striderfly.j0wy.com)
 ==========
-![](http://assets7.thrillist.com/v1/image/1280637/size/tl-today_sq)
+![](public/striderfly.jpg)
 
 ## Installation
 ```
 npm install && npm start
 ```
 
+That builds the site and serves it at http://localhost:8787, rebuilding when you change a file. Requires Node.js 22 or later.
+
 ## Stack
-Node.js, Express, Hogan.js
+Static HTML on Cloudflare Workers (Static Assets), built with a small Node script and Hogan.js, deployed with the `cf` CLI.
 
-## Pull requests
-**Please fork, and then submit a pull request.**  All code must be encapsulated within your respective directories, unless necessary:
+## Adding your page
+Every contributor gets a folder in `contributors/`, with their page, assets and a `contributor.json` that puts them on the homepage. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add yours and open a pull request.
 
-```
-./routes/user-handle.js
-./views/user-handle/*.hjs
-./public/stylesheets/user-handle/*.css
-./public/javascripts/user-handle/*.js
-./public/images/user-handle/*.*
-```
-
-## Creating Your Page
-Add a route file to the routes directory, with your handle.  Your pages will now be served from your handle.  ```e.g. http://striderfly.xxx/jhiggins```
-```js
-/**
- * Example User's route
- */
-var express = require('express');
-var router = express.Router();
-
-router.get('/', function (req, res) {
-  res.render('user-handle/index');
-});
-
-module.exports = router;
+## Deploying
+The site is a static-assets-only Cloudflare Worker at https://striderfly.j0wy.com. `build.js` copies `public/` and every contributor folder into `dist/`, and renders the homepage and 404 page from `views/`. Configuration is in `cloudflare.config.ts` and `wrangler.config.ts`.
 
 ```
-
-## Contributor Information
-
-All information is stored in ```config/users.js```.  To add a new user, add an object to the ```module.exports```.
-
+npm run deploy
 ```
-// Example
-module.exports = [
-  {
-    "handle": "jhiggins",
-    "lastName": "Higgins",
-    "firstName": "Joseph",
-    "email": "joseph.james.higgins@gmail.com",
-    "contribution": 10.00,
-  }
-];
-```
+
+Deploying needs a `cf` login for the Cloudflare account that owns j0wy.com: `cf auth create <profile>`, then `cf auth activate <profile>` in this folder.

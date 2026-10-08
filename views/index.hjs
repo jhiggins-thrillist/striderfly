@@ -28,7 +28,7 @@
   <body>
     <h1>Striderfly.xxx</h1>
 
-    <img src="//assets7.thrillist.com/v1/image/1280637/size/tl-today_sq" />
+    <img src="/striderfly.jpg" />
 
     <div class="wrapper">
         <main class="container">
@@ -37,7 +37,7 @@
               <ul>
                 {{#users}}
                     <li class="contributor">
-                        {{#hasDirectory}}<a href="/{{handle}}" class="contributor-link">{{/hasDirectory}}
+                        {{#hasDirectory}}<a href="/{{handle}}/" class="contributor-link">{{/hasDirectory}}
                             <span class="contributor-name">{{firstName}} {{lastName}}</span>
                         {{#hasDirectory}}</a>{{/hasDirectory}}
                     </li>
