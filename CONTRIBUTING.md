@@ -2,6 +2,8 @@
 
 Everyone gets one folder. Put your page and everything it needs in `contributors/<your-handle>/`, open a pull request, and once it's merged your page goes live at `https://striderfly.j0wy.com/<your-handle>/`.
 
+By contributing, you agree to follow the [code of conduct](CODE_OF_CONDUCT.md).
+
 ## 1. Set up
 
 Fork [jhiggins-thrillist/striderfly](https://github.com/jhiggins-thrillist/striderfly), clone your fork, and run:
