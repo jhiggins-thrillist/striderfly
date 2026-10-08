@@ -1,6 +1,8 @@
 import { defineConfig } from "cf/config";
 
 export default defineConfig({
+	// The personal account that owns j0wy.com
+	accountId: "25537cbfe9f8ee550e77f1e0a61aea5d",
 	worker: {
 		name: "striderfly",
 		compatibilityDate: "2026-10-06",
