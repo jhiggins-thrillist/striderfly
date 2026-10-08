@@ -20,6 +20,8 @@ The site is a static-assets-only Cloudflare Worker at https://striderfly.j0wy.co
 
 The site asks search engines not to index it: `public/_headers` sends `X-Robots-Tag: noindex, nofollow` with every response. There's deliberately no `robots.txt` blocking crawlers, since a crawler that can't fetch a page never sees its noindex header.
 
+Visits are counted with Cloudflare Web Analytics, which is turned on for the j0wy.com zone and doesn't use cookies.
+
 ```
 npm run deploy
 ```

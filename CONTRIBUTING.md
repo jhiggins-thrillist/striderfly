@@ -60,7 +60,7 @@ With `npm start` running, open http://localhost:8787/your-handle/ and make sure:
 * **Don't commit** `dist/`, `.cloudflare/` or `node_modules/` (they're gitignored).
 * **Keep files under 25 MB each.** That's Cloudflare's limit for a single file.
 * **Only include things you have the right to share**, and keep license files with any third-party fonts or libraries you bundle (see `contributors/jhiggins/fonts/` for an example).
-* **No trackers, analytics, ads, crypto miners, or anything that collects visitors' data.** This is a public site, and PRs are reviewed before they're merged.
+* **No trackers, analytics, ads, crypto miners, or anything that collects visitors' data.** The site already counts visits with Cloudflare Web Analytics, which doesn't use cookies, so there's no need to add your own. PRs are reviewed before they're merged.
 * **Keep it good-natured.** This is a tribute to Strider.
 
 After your PR is merged, a maintainer deploys the site and your page goes live.
