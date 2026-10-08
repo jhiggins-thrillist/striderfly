@@ -43,7 +43,7 @@ With just a `contributor.json` you're listed on the homepage without a link. Add
 * **Use relative paths** for your own files, so your folder works wherever it's served from:
   * In HTML or JavaScript, relative to your page: `<script src="scripts/game.js">`, `new Audio('images/boing.wav')`
   * In CSS, relative to the stylesheet: `url(../images/bg.png)`
-* **Keep it self-contained.** Put copies of fonts, libraries and images in your folder instead of loading them from other sites. Video embeds like YouTube are the exception.
+* **Keep it self-contained.** Put copies of fonts, libraries and images in your folder instead of loading them from other sites. Video embeds like YouTube are the exception. Give a YouTube `<iframe>` the attribute `referrerpolicy="strict-origin-when-cross-origin"`, or it won't play on the live site (error 153).
 * **Shared files** from `public/` are available at the root if you want them: `/stylesheets/normalize.css`, `/striderfly.png`, `/striderfly.jpg`, and the favicons.
 * **More pages** go next to `index.html`: `contributors/your-handle/game.html` is served at `/your-handle/game`.
 
