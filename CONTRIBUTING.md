@@ -33,8 +33,7 @@ contributors/your-handle/
 }
 ```
 
-* `contribution` is a number. The homepage lists everyone from highest to lowest.
-* You can also add an `email`. It's never shown on the site, but this repo is public, so anyone browsing GitHub can read it. Leave it out if you'd rather.
+`contribution` is a number. The homepage lists everyone from highest to lowest.
 
 With just a `contributor.json` you're listed on the homepage without a link. Add an `index.html` and your name links to your page.
 
